@@ -13,6 +13,7 @@ const Home = lazy(() => import("./Home.jsx"));
 const Applayout = () => {
   return (
     <Suspense fallback={<Loading />}>
+      <h1>With CodeSpliting</h1>
       <Outlet />
       <br />
       <NavigateButton />
